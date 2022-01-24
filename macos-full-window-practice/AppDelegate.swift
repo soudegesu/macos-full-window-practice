@@ -39,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.titleVisibility = .hidden
     // ウインドウがついて回るようにする
     window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
-    window.level = .floating
+    window.level = NSWindow.Level(Int(CGShieldingWindowLevel()))
     // 最前面にいてもクリックできるようにする
     window.ignoresMouseEvents = true
     window.isReleasedWhenClosed = false

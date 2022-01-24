@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
       Color.red
-        .opacity(0.1)
+        .opacity(0.5)
     }
 }
 
